@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!-- Glidejs StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://kit.fontawesome.com/8628368ab2.js" crossorigin="anonymous"></script>
+
+
+    <title>Codevo Shop</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+
+    <script src="./js/JQuery3.3.1.js"></script>
+    <script src="./js/lightslider.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Movies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            tv shows
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            music
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            web shows
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            buzz
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <h1><i class="fas fa-search"></i></h1>
+                    <h1><i class="fas fa-plus"></i> my list</h1>
+                    <h1 class="login">login</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Movie header -->
+        <div id="main">
+            <div class="circle-box">
+                <svg height="402" width="402">
+                    <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="gray" fill="none" />
+                </svg>
+                <svg height="402" width="402">
+                    <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle" />
+                </svg>
+
+                <div>
+                    <span id="step1"></span>
+                    <span id="step2"></span>
+                    <span id="step3"></span>
+                    <span id="step4"></span>
+                    <span id="step5"></span>
+                </div>
+
+                <div class="movie-details-box" id="movieDetailsBox">
+                    <div class="movie-name">
+                        <h3><strong>Black Widow</strong></h3>
+                        <h4><strong>Director</strong>: Cate Shortland</h4>
+                        <h4><strong>Producer</strong>: Kevin Feige</h4>
+                        <h4><strong>Starring</strong>: Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko,
+                            William Hurt, Ray Winstone, Rachel Weisz</h4>
+                        <div class="play-btn">
+                            <img src="./images/play.png" onclick="playVideo('./images/movie/mv-1.mkv')" class="p-btn">
+                        </div>
+                    </div>
+                    <div class="movie-name">
+                        <h3>Bloodshot</h3>
+                        <h4>Director: David S F Wilson</h4>
+                        <h4>Producer: Vin Diesel, Dinesh Shamdasani, Toby Jaffe, Neal H. Moritz</h4>
+                        <h4>Starring: Vin Diesel, Eiza González, Sam Heughan, Toby Kebbell, Guy Pearce</h4>
+                        <div class="play-btn">
+                            <img src="./images/play.png" onclick="playVideo('./images/Bloodshot.mkv')" class="p-btn">
+                        </div>
+                    </div>
+                    <div class="movie-name">
+                        <h3>Serious Men</h3>
+                        <h4>Director: Sudhir Mishra</h4>
+                        <h4>Producer: Sudhir Mishra</h4>
+                        <h4>Starring: Nawazuddin Siddiqui, Indira Tiwari, Nassar, Aakshath Das, Sanjay Narvekar, Shweta
+                            Basu Prasad, Yogesh Yadav</h4>
+                        <div class="play-btn">
+                            <img src="./images/play.png" onclick="playVideo('./images/movie/mv-3.mkv')" class="p-btn">
+                        </div>
+                    </div>
+                    <div class="movie-name">
+                        <h3>Dil Bechara</h3>
+                        <h4>Director: Cate Shortland</h4>
+                        <h4>Producer: Kevin Feige</h4>
+                        <h4>Starring: Sushant Singh Rajput, Sanjana Sanghi</h4>
+                        <div class="play-btn">
+                            <img src="./images/play.png" onclick="playVideo('./images/vid1.mp4')" class="p-btn">
+                        </div>
+                    </div>
+                    <div class="movie-name">
+                        <h3>Uri: The Surgical Strike</h3>
+                        <h4>Director: Aditya Dhar</h4>
+                        <h4>Producer: Ronnie Screwvala</h4>
+                        <h4>Starring: Vicky Kaushal, Paresh Rawal, Yami Gautam, Mohit Raina, Kirti Kulhari</h4>
+                        <div class="play-btn">
+                            <img src="./images/play.png" onclick="playVideo('./images/vid1.mp4')" class="p-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Showcase -->
+    <section>
+        <div class="scase">
+            <h1 class="showcase-headung">Latest Movies</h1>
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-1.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-2.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-3.webp"></a>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-4.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-5.jpeg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-6.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-7.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-8.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-9.webp"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-10.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Latest Movies -->
+    <!-- Hollywood -->
+    <section id="latestMovies">
+        <div class="ltst">
+            <h2 class="latest-heading">Hollywood</h2>
+            <ul id="autoWidth2" class="cs-hidden">
+                <li class="item-a">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-1.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Avatar</strong>
+                            <p>Sci-fi/Action</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-2.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>La La Land</strong>
+                            <p>Musical/Romance</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-3.png"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Titanic</strong>
+                            <p>Romance/Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-4.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>American Beauty</strong>
+                            <p>Romance/Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-5.png"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>O.U.A.T in Hollywood</strong>
+                            <p>Comedy/Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-f">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-6.jpeg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Blade Runner</strong>
+                            <p>Sci-fi/Action</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-g">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-7.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>The Matrix</strong>
+                            <p>Action/Sci-fi </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-h">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-8.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Jurassic Park</strong>
+                            <p>Adventure/Sci-fi</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-i">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-9.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Wonder Woman</strong>
+                            <p>Action/Adventure</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-j">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/hlwd-10.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Avengers: Infinity War</strong>
+                            <p>Action/Sci-fi</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bollywood -->
+    <section id="latestMovies">
+        <div class="ltst">
+            <h2 class="latest-heading">Bollywood</h2>
+            <ul id="autoWidth2" class="cs-hidden">
+                <li class="item-a">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/Raat-Akeli-Hai.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Raat Akeli Hai</strong>
+                            <p>Crime Thriller Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/angreji-medium.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Angrezi Medium</strong>
+                            <p>Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/guilty.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Guilty</strong>
+                            <p>Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/Mrs.-Serial-Killer.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Mrs. Serial Killer</strong>
+                            <p>Crime Thriller</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/Laal-Kaptaan.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Laal Kaptaan</strong>
+                            <p>Action/Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-f">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/ginny-weds-sunny.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Ginny weds Sunny</strong>
+                            <p>Comedy</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-g">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/don-2.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Don 2</strong>
+                            <p>Action/Crime</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-h">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/lucknow-central.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Lucknow Central</strong>
+                            <p>Drama/Action</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-i">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/gully-boy.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Gully Boy</strong>
+                            <p>Musical/Drama</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-j">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <a href="#"><img src="./images/poster/choked.jpg"></a>
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Choked</strong>
+                            <p>Drama</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Video Song -->
+    <section>
+        <div class="scase">
+            <h1 class="showcase-headung">Latest Movies</h1>
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-1.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-2.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-3.webp"></a>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-4.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-5.jpeg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-6.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-7.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-8.jpg"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-9.webp"></a>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="showcase-box">
+                        <a href="#"><img src="./images/poster/ltst-10.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="footer">
+
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="./images/Bloodshot.mkv" type="video/mkv">
+        </video>
+        <img src="./images/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo() {
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+
+
+    <!----svg circle---->
+    <script>
+        var svgCircle = document.getElementById("svgCircle");
+        var step1 = document.getElementById("step1");
+        var step2 = document.getElementById("step2");
+        var step3 = document.getElementById("step3");
+        var step4 = document.getElementById("step4");
+        var step5 = document.getElementById("step5");
+        var main = document.getElementById("main");
+        var movieDetailsBox = document.getElementById("movieDetailsBox");
+
+        main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6)0%, rgba(0,0,0,0.6)100%), url(./images/poster/header1.jpg)";
+
+        step1.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "1004";
+            main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0,0.4)100%), url(./images/slider1.jpg)";
+            movieDetailsBox.style.top = "-330px"
+        });
+        step2.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "753";
+            main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0,0.4)100%), url(./images/poster/hdr-3.jpg)";
+            movieDetailsBox.style.top = "-780px";
+        });
+        step3.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "502";
+            main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0,0.4)100%), url(./images/slider4.jpg)";
+            movieDetailsBox.style.top = "-1230px";
+        });
+        step4.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "251";
+            main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0,0.4)100%), url(./images/slider5.jpg)";
+            movieDetailsBox.style.top = "-1680px";
+        });
+        step5.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "0";
+            main.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6)0%, rgba(0,0,0,0.6)100%), url(./images/poster/header1.jpg)";
+            movieDetailsBox.style.top = "120px";
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth,#autoWidth2').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth,#autowidth2').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+    <!----jQuery, Popper.js, and Bootstrap JS---->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/JQuery3.3.1.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/slider.js"></script>
+
+</body>
+
+</html>
